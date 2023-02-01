@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section>
+        <div class="container">
+
+    <form>
+        <div id="step1">
+            <div class="form-group">
+                <label for="name">Prenom</label><br>
+                    <input type="text" name="name" class="I" required></input>
+            </div>
+            <div class="form-group">
+                    <label for="name">Nom</label><br>
+                    <input type="text" name="name" class="I" required></input>
+            </div>
+            <div class="form-group">
+               <label for="email">Email</label><br>
+               <input type="email" name="email" class="I" required></input>
+            </div>
+            <div class="form-group">
+                    <label for="name">Telephone</label><br>
+                    <input type="number" name="number" class="I" required></input>
+            </div>
+            <div class="form-group">
+                <label for="email">Adresse</label><br>
+                <input type="text" name="name" class="I" required></input>
+            </div>
+            <div class="form-group">
+                <label for="name">Domaine</label><br>
+                <select id="domain" name="domain" >
+                    <option value="domain1">Developpement web-mobile</option>
+                    <option value="domain2">Design</option>
+                    <option value="domain3">Marketing digital</option>
+                    <option value="domain4">Bureautique</option>
+                    <option value="domain5">Ressources humaines</option>
+                    <option value="domain6">Arduino-Modélisation 3D</option>
+                    <option value="domain7">Gestion de projet</option>
+                    <option value="domain8">Maintenance</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                    <label for="exampleFormControlTextarea1" class="form-label">Participants de l'entretien:</label>
+                    <textarea id="exampleFormControlTextarea1" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                 <label for="exampleFormControlTextarea1" class="form-label">presentation du candidat:</label>
+                 <textarea id="exampleFormControlTextarea1" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1" class="form-label">Connaissez vous defar sci:</label>
+                <textarea id="exampleFormControlTextarea1" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1" class="form-label">Comment voyez vous defar sci:</label>
+                <textarea id="exampleFormControlTextarea1" rows="3" required></textarea>
+            </div>
+            <br>
+            <div>
+            <button type="button" value="Suivant" onclick="showStep2()" id="bouton">suivant</button>
+            </div>
+            </div>
+        
+         
+      
+
+
+        <div id="step2" style="display:none">
+         <div class="form-group">
+            <label for="exampleFormControlTextarea1" class="form-label">Qu'attendez vous de defar sci:</label>
+            <textarea id="exampleFormControlTextarea1" rows="3" required></textarea>
+    </div>
+    <div class="form-group">
+         <label for="exampleFormControlTextarea1" class="form-label">Parlez nous de vos attouts:</label>
+         <textarea id="exampleFormControlTextarea1" rows="3" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1" class="form-label">Parlez nous de vos faiblesses:</label>
+        <textarea id="exampleFormControlTextarea1" rows="3" required></textarea>
+    </div>
+    <div class="form-group">
+            <label for="exampleFormControlTextarea1" class="form-label">souffrez vous d'une maladie ou d'une alergie:</label><br>
+            <input type="radio" name="yesno" id="yesno" value="yes">Oui 
+                <input type="radio" name="yesno" id="yesno" value="no">Non
+        
+                <textarea name="explanation" id="explanation" rows="4" cols="50" style="display:none" placeholder="Veuillez donner une explication"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1" class="form-label">Quels sont vos objectifs fixés d'ici 2ans:</label>
+        <textarea class="C3" id="exampleFormControlTextarea1" rows="3" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1" class="form-label">combien de mois voulez vous faire la formation:</label>
+        <textarea class="C3" id="exampleFormControlTextarea1" rows="3" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1" class="form-label">Quand est ce que vous allez demarrer la formation:</label>
+        <textarea class="C3" id="exampleFormControlTextarea1" rows="3" required></textarea>
+    </div>
+    <div class="form-group">
+        <h4>Présentation des horraires de travail</h4>
+        <li>Du lundi au vendredi de 9h à 18h</li>
+        <li>Petit déjeuner: 11h à 11H 45</li>
+        <li>Heure de pause: 14h à 15h</li> 
+    </div>
+    <div class="form-group">
+        <h4>Modalité du paiement de la formation</h4>
+            <li>10.000 inscriptions + 10.000 mensualités</li>
+        </div>
+        <div class="form-group">
+        <label for="name">donnez un numero en cas d'urgence</label>
+                <input type="number" name="number" class="I" required></input>
+            </div>
+            <div class="form-group">
+          <button value="Précédent" onclick="showStep1()" id="bouton">précédent</button>
+        </div>
+            <div class="form-group">
+          <button type="submit" value="Soumettre" id="bouton">soumettre</button>
+        </div>
+        </div>
+      </form>
+
+    </div>
+</section>
+    
+</body>
+<script src="./main.js"></script>
+</html>
+
+<script>
+    var checkbox = document.getElementById("yesno");
+    var textarea = document.getElementById("explanation");
+    
+    checkbox.addEventListener("change", function() {
+      if (checkbox.checked) {
+        textarea.style.display = "block";
+      } else {
+        textarea.style.display = "none";
+      }
+    });
+    </script>
