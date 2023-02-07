@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+  background-color: #f6f8fa;
+}
 form {
     font-family: Arial, sans-serif;
   }
@@ -12,7 +14,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aliceblue;
+    background-color: #f6f8fa;
 }
 .container{
     width: 90%;
@@ -24,12 +26,19 @@ form {
     padding: 20px;
 }
 textarea{
-    width: 90%;
-    height: 40px;
+  resize: none;
+  outline: none;
+  border: 0;
+  background-color: rgb(240, 240, 236);
+   width: 90%;
+  height: 80px;
 }
 .I{
+  border: 0;
+  background-color: rgb(240, 240, 236);
+  outline: none;
     width: 90%;
-    height: 40px;
+    height: 30px;
     padding: 1Opx;
     margin-top: 5px;
 }
@@ -50,8 +59,16 @@ textarea{
     font-weight: bold;
     margin-right: 10px;
   }
+  select{
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    background-color: rgb(240, 240, 236);
+    height: 35px;
+    width: 60%;
+  }
   button{
-    background-color: #4CAF50;
+    background-color: #84addb;
     color: white;
     min-width: 20px;
     padding: 12px 20px;

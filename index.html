@@ -28,7 +28,7 @@
             </div>
             <div class="form-group">
                     <label for="name">Telephone</label><br>
-                    <input type="number" name="number" class="I" required></input>
+                    <input type="text" name="number" class="I" required></input>
             </div>
             <div class="form-group">
                 <label for="email">Adresse</label><br>
@@ -37,6 +37,7 @@
             <div class="form-group">
                 <label for="name">Domaine</label><br>
                 <select id="domain" name="domain" >
+                    <option value="domain0"></option>
                     <option value="domain1">Developpement web-mobile</option>
                     <option value="domain2">Design</option>
                     <option value="domain3">Marketing digital</option>
@@ -48,11 +49,15 @@
                   </select>
             </div>
             <div class="form-group">
+                    <label for="exampleFormControlTextarea1" class="form-label">Pourquoi ce choix:</label>
+                    <textarea id="exampleFormControlTextarea1" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
                     <label for="exampleFormControlTextarea1" class="form-label">Participants de l'entretien:</label>
                     <textarea id="exampleFormControlTextarea1" rows="3" required></textarea>
             </div>
             <div class="form-group">
-                 <label for="exampleFormControlTextarea1" class="form-label">presentation du candidat:</label>
+                 <label for="exampleFormControlTextarea1" class="form-label">Présentation du candidat:</label>
                  <textarea id="exampleFormControlTextarea1" rows="3" required></textarea>
             </div>
             <div class="form-group">
@@ -63,6 +68,10 @@
                 <label for="exampleFormControlTextarea1" class="form-label">Comment voyez vous defar sci:</label>
                 <textarea id="exampleFormControlTextarea1" rows="3" required></textarea>
             </div>
+         <div class="form-group">
+            <label for="exampleFormControlTextarea1" class="form-label">Qu'attendez vous de defar sci:</label>
+            <textarea id="exampleFormControlTextarea1" rows="3" required></textarea>
+    </div>
             <br>
             <div>
             <button type="button" value="Suivant" onclick="showStep2()" id="bouton">suivant</button>
@@ -74,10 +83,7 @@
 
 
         <div id="step2" style="display:none">
-         <div class="form-group">
-            <label for="exampleFormControlTextarea1" class="form-label">Qu'attendez vous de defar sci:</label>
-            <textarea id="exampleFormControlTextarea1" rows="3" required></textarea>
-    </div>
+           
     <div class="form-group">
          <label for="exampleFormControlTextarea1" class="form-label">Parlez nous de vos attouts:</label>
          <textarea id="exampleFormControlTextarea1" rows="3" required></textarea>
@@ -87,7 +93,7 @@
         <textarea id="exampleFormControlTextarea1" rows="3" required></textarea>
     </div>
     <div class="form-group">
-            <label for="exampleFormControlTextarea1" class="form-label">souffrez vous d'une maladie ou d'une alergie:</label><br>
+            <label for="exampleFormControlTextarea1" class="form-label">Souffrez vous d'une maladie ou d'une alergie:</label><br>
             <input type="radio" name="yesno" id="yesno" value="yes">Oui 
                 <input type="radio" name="yesno" id="yesno" value="no">Non
         
@@ -98,7 +104,7 @@
         <textarea class="C3" id="exampleFormControlTextarea1" rows="3" required></textarea>
     </div>
     <div class="form-group">
-        <label for="exampleFormControlTextarea1" class="form-label">combien de mois voulez vous faire la formation:</label>
+        <label for="exampleFormControlTextarea1" class="form-label">Combien de mois voulez vous faire la formation:</label>
         <textarea class="C3" id="exampleFormControlTextarea1" rows="3" required></textarea>
     </div>
     <div class="form-group">
@@ -106,24 +112,28 @@
         <textarea class="C3" id="exampleFormControlTextarea1" rows="3" required></textarea>
     </div>
     <div class="form-group">
-        <h4>Présentation des horraires de travail</h4>
+        <h4>Présentation des horaires de travail</h4>
         <li>Du lundi au vendredi de 9h à 18h</li>
         <li>Petit déjeuner: 11h à 11H 45</li>
-        <li>Heure de pause: 14h à 15h</li> 
+        <li>Heure de pause: 14h à 15h</li>
+    </div>
+    <div class="form-group">
+        <h4> Horaires du candidat</h4>
+        <textarea class="C3" id="exampleFormControlTextarea1" rows="3" required></textarea>
     </div>
     <div class="form-group">
         <h4>Modalité du paiement de la formation</h4>
-            <li>10.000 inscriptions + 10.000 mensualités</li>
+        <input type="text" name="number" class="I" required></input>
         </div>
         <div class="form-group">
-        <label for="name">donnez un numero en cas d'urgence</label>
-                <input type="number" name="number" class="I" required></input>
+        <label for="name">Donnez un numero en cas d'urgence</label>
+                <input type="text" name="number" class="I" required></input>
             </div>
             <div class="form-group">
-          <button value="Précédent" onclick="showStep1()" id="bouton">précédent</button>
+          <button value="Précédent" onclick="showStep1()" id="bouton">Précédent</button>
         </div>
             <div class="form-group">
-          <button type="submit" value="Soumettre" id="bouton">soumettre</button>
+          <button type="submit" value="Soumettre" id="bouton">Soumettre</button>
         </div>
         </div>
       </form>
